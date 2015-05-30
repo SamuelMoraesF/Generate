@@ -12,7 +12,20 @@ module.exports = function(grunt) {
           sourceMap: true,
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'public/css/app.css': 'scss/app.scss'
+        }
+      }
+    },
+
+    uglify: {
+      js: {
+        options: {
+          preserveComments: false,
+          sourceMap: true,
+          sourceMapName: 'public/js/app.js.map'
+        },
+        files: {
+          'public/js/app.js': ['bower_components/modernizr/modernizr.js', 'bower_components/jquery/dist/jquery.js', 'bower_components/foundation/js/foundation.js', 'jssrc/app.js']
         }
       }
     },
@@ -34,7 +47,8 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'uglify']);
   grunt.registerTask('default', ['build','watch']);
 }
