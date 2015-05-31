@@ -12,12 +12,37 @@ $('.sectionshow a').click(function(){
     $($(this).data( "show" )).show();
 })
 
-$('.tab .value').mask();
+//$('.tab .value').mask();
 
 function remval(){
 	$(".tab h1.info").removeClass("invalid").removeClass("valid");
 	$(".tab .value").removeClass("valid").removeClass("invalid")
 }
+
+$("#rg .generate").click(function(){
+	gerarRG();
+})
+
+$("#cpf .generate").click(function(){
+	gerarCPF();
+})
+
+$("#cnpj .generate").click(function(){
+	gerarCNPJ();
+})
+
+$("#rg .validate").click(function(){
+	vrg($("#rg .value").val())
+})
+
+$("#cpf .validate").click(function(){
+	vcpf($("#cpf .value").val())
+})
+
+$("#cnpj .validate").click(function(){
+	vcnpj($("#cnpj .value").val())
+})
+
 
 /*
 

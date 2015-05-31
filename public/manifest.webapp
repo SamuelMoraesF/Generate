@@ -1,0 +1,23 @@
+{
+  "name": "Gerador e validador de dados",
+  "description": "Gerador e validador de CNPJ, CPF e RG",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "developer": {
+    "name": "Samuel Moraes",
+    "url": "http://samuelmoraes.com"
+  },
+  "icons": {
+    "512": "/images/512.png",
+    "256": "/images/256.png",
+    "128": "/images/128.png",
+    "90": "/images/90.png",
+    "64": "/images/64.png",
+    "60": "/images/60.png",
+    "48": "/images/48.png",
+    "32": "/images/32.png",
+    "16": "/images/16.png"
+  },
+  "orientation": "portrait",
+  "version": "1.0"
+}
