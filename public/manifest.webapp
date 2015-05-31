@@ -1,5 +1,5 @@
 {
-  "name": "Gerador e validador de dados",
+  "name": "GenData",
   "description": "Gerador e validador de CNPJ, CPF e RG",
   "launch_path": "/index.html",
   "type": "privileged",

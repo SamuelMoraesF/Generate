@@ -19,6 +19,10 @@ function remval(){
 	$(".tab .value").removeClass("valid").removeClass("invalid")
 }
 
+$(".tab .value").keypress(function(){
+	remval()
+})
+
 $("#rg .generate").click(function(){
 	gerarRG();
 })
