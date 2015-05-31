@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           sourceMapName: 'public/js/app.js.map'
         },
         files: {
-          'public/js/app.js': ['bower_components/modernizr/modernizr.js', 'bower_components/jquery/dist/jquery.js', 'bower_components/foundation/js/foundation.js', 'jssrc/app.js']
+          'public/js/app.js': ['bower_components/modernizr/modernizr.js', 'bower_components/jquery/dist/jquery.js', 'bower_components/foundation/js/foundation.js', 'bower_components/jQuery-Mask-Plugin/dist/jquery.mask.min.js', 'jssrc/app.js']
         }
       }
     },
@@ -36,6 +36,11 @@ module.exports = function(grunt) {
           reload: true
         },
         files: ['Gruntfile.js']
+      },
+
+      uglify: {
+        files: 'jssrc/**/*.js',
+        tasks: ['uglify']
       },
 
       sass: {

@@ -38,3 +38,46 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+.inner-wrap {
+	min-height: 100vh;
+}
+
+#cpf, #cnpj, #rg, #cep {
+	display:none;
+}
+
+.main-section {
+    width: 90%;
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#home {
+    text-align: center;
+}
+
+input.invalid {
+    border-color:#d40000 !important;
+}
+
+input.valid {
+    border-color:#d4d400 !important;
+}
+
+.tab h1.info{
+    text-align: center;
+    font-size:3.5em;
+    margin:50px 0 50px 0;
+    color:transparent;
+}
+
+.tab h1.invalid {
+	color:#d40000;
+}
+
+.tab h1.valid {
+	color:#d4d400;
+}
