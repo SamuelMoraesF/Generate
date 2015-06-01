@@ -2,7 +2,6 @@
   "name": "GenData",
   "description": "Gerador e validador de CNPJ, CPF e RG",
   "launch_path": "/index.html",
-  "type": "privileged",
   "developer": {
     "name": "Samuel Moraes",
     "url": "http://samuelmoraes.com"
